@@ -1,1 +1,0 @@
-# tailwind-real-estate-belaos
