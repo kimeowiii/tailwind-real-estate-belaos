@@ -93,13 +93,13 @@
   .toggle__menu {
     @apply flex flex-col gap-1 z-50 md:hidden;
   }
-  .toggle__menu span{
+  .toggle__menu span {
     @apply content-["*"] bg-primary w-10 h-1 rounded-lg inline-block;
   }
   .toggle__menu span:last-child {
     @apply w-7 ease-in-out duration-700;
   }
-  .toggle__menu.open span{
+  .toggle__menu.open span {
     @apply w-7 ease-in-out duration-700;
   }
   .toggle__menu.open span:last-child {
@@ -107,35 +107,87 @@
   }
 
   /* About-offer card */
-.aboutOffer__card{
+  .aboutOffer__card {
     @apply flex flex-col items-center justify-center my-5 bg-gray-200 md:flex-row md:gap-5 shadow-lg;
   }
-  .aboutOffer__card__details{
+  .aboutOffer__card__details {
     @apply px-5 py-10;
   }
-  .aboutOffer__card img{
+  .aboutOffer__card img {
     @apply w-full md:w-72 md:h-96 md:object-cover lg:h-auto lg:w-auto;
   }
-  .aboutOffer__card__details h4{
+  .aboutOffer__card__details h4 {
     @apply text-xl font-bold lg:text-3xl;
   }
-  .aboutOffer__card__details p{
-    @apply mt-5 text-justify ;
+  .aboutOffer__card__details p {
+    @apply mt-5 text-justify;
   }
   /*Properties*/
-  .propertiesSelection__card{
-    @apply flex flex-col items-center justify-center my-5 md:flex-row md:gap-5;
+  .propertiesSelection__card {
+    @apply grid grid-cols-1 gap-1 items-center m-5 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 lg:gap-5;
   }
-  .propertiesSelection__card__details{
-    @apply px-5 py-5 size-fit;
+  .propertiesSelection__card__details {
+    @apply py-5;
   }
-  .propertiesSelection__card img{
-    @apply w-full md:object-cover lg:h-auto lg:w-auto;
+  .propertiesSelection__card img {
+    @apply w-full;
   }
-  .propertiesSelection__card__details h4{
+  .propertiesSelection__card__details h4 {
     @apply text-xl font-bold lg:text-3xl;
   }
-  .propertiesSelection__card__details p{
-    @apply my-5 text-justify ;
+  .propertiesSelection__card__details p {
+    @apply py-5 text-justify;
   }
+  .propertiesSelection__card__details a {
+    @apply inline-block text-primary hover:text-secondary;
+  }
+
+  /* Single properties */
+  .singleProperties__card {
+    @apply flex gap-5 mb-7;
+  }
+  .singleProperties__card__details h6{
+    @apply text-base font-bold;
+  }
+  .singleProperties__card__details p{
+    @apply my-[1rem];
+  }
+
+  /* Contacts */
+
+  .contact__details__item {
+    @apply bg-white flex gap-2 p-2 my-5 shadow-lg rounded-sm w-80;
+  }
+  .contact__details__item span {
+    @apply bg-primary rounded-full text-white p-5 w-1 h-1;
+  }
+
+  .contact__details__item h6 {
+    @apply font-bold;
+  }
+
+
+
+  /* .contact__wrapper {
+    @apply grid grid-cols-[1fr_4fr] gap-[3rem];
+  }
+  .contact__cards {
+    @apply bg-white;
+  }
+  .contact__cards__wrapper {
+    @apply flex gap-2 p-2 my-5 shadow-lg rounded-sm w-80;
+  }
+  .contact__cards__wrapper a i {
+    @apply bg-primary rounded-full text-white p-3;
+  }
+  .contact__cards__details span{
+    @apply font-bold;
+  }
+  .contact__form__name input{
+    @apply border-2 border-black rounded-lg p-4 grid grid-cols-2;
+  }
+  .form {
+   
+  } */
+  
 }
